@@ -63,6 +63,9 @@ h3.title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(26px
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
 .card h4{margin:0 0 6px;font-size:16px}
 .card p{margin:0;color:var(--muted);font-size:15px}
+a.card.project{display:block;color:var(--ink);transition:border-color .15s}
+a.card.project:hover{text-decoration:none;border-color:var(--accent)}
+a.card.project h4{font-size:18px;color:var(--accent)}
 
 /* stats */
 .stat .n{font-family:Fraunces,Georgia,serif;font-size:40px;font-weight:600;color:var(--accent);line-height:1}
@@ -106,6 +109,7 @@ footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:13.5px
     <a class="brand" href="#top">Anu Yerokun</a>
     <div class="links">
       <a href="#about">About</a>
+      <a href="#projects">Projects</a>
       <a href="#certs">Certifications</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
@@ -159,6 +163,18 @@ footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:13.5px
       <div class="card stat"><div class="n">85%</div><div class="l">High-risk vulnerabilities remediated on schedule at Target</div></div>
       <div class="card stat"><div class="n">100%</div><div class="l">SOX compliance across financial systems</div></div>
     </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <h3 class="title">Featured work</h3>
+    <a class="card project" href="https://github.com/ayerokun-cmd/aws-secure-vpc-baseline" target="_blank" rel="noopener">
+      <h4>AWS Secure VPC Baseline →</h4>
+      <p>A secure, multi-AZ, three-tier AWS network in CloudFormation, with an isolated data tier, chained security groups, KMS-encrypted flow logs and SSM access with no bastion host. It includes an organization-wide guardrail policy (SCP), a control mapping to NIST CSF 2.0, ISO 27001:2022 and PCI DSS v4.0, and automated cfn-lint and Checkov checks on every commit.</p>
+      <div class="chips" style="margin-top:14px"><span>CloudFormation</span><span>VPC</span><span>KMS</span><span>IAM</span><span>SCPs</span><span>Checkov</span><span>GitHub Actions</span><span>PCI DSS</span></div>
+    </a>
   </div>
 </section>
 
