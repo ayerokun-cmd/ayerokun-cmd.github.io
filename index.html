@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anu Yerokun | Cloud Security Architect</title>
+<meta name="description" content="Anu Yerokun: AWS Certified Solutions Architect and CISA with 6+ years of cloud architecture, security and technology risk experience in fintech and financial services.">
+<meta property="og:title" content="Anu Yerokun | Cloud Security Architect">
+<meta property="og:description" content="AWS Solutions Architect · CISA · 6+ years in cloud security and GRC for financial services.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f3d5e'/><text x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'>AY</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fa; --surface:#ffffff; --ink:#0f1b2a; --muted:#56657a; --line:#e3e7ee;
+  --accent:#0f3d5e; --accent-2:#1f8a8a; --chip:#eef3f7; --shadow:0 1px 2px rgba(15,27,42,.06),0 8px 24px rgba(15,27,42,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b1220; --surface:#121b2c; --ink:#e7edf5; --muted:#9aa8bb; --line:#22304a;
+    --accent:#7cc4e8; --accent-2:#5fd0c0; --chip:#18243a; --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.links{display:flex;gap:22px;font-size:14px}
+.links a{color:var(--muted)}
+.links a:hover{color:var(--ink);text-decoration:none}
+@media (max-width:680px){.links{display:none}}
+
+/* hero */
+header.hero{padding:88px 0 64px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--accent-2);background:var(--chip);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent-2)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(40px,7vw,68px);line-height:1.04;letter-spacing:-.02em;margin:22px 0 14px}
+.role{font-size:clamp(18px,2.4vw,22px);color:var(--muted);margin:0 0 22px;font-weight:500}
+.lede{max-width:680px;font-size:18px;margin:0 0 32px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.btn svg{width:18px;height:18px}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);margin:0 0 8px;font-weight:700}
+h3.title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(26px,3.6vw,34px);letter-spacing:-.01em;margin:0 0 28px;line-height:1.2}
+
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+
+/* stats */
+.stat .n{font-family:Fraunces,Georgia,serif;font-size:40px;font-weight:600;color:var(--accent);line-height:1}
+.stat .l{margin-top:10px;color:var(--muted);font-size:14.5px}
+
+/* certs */
+.cert{display:flex;gap:14px;align-items:flex-start}
+.badge{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#fff}
+.b-aws{background:#232f3e}.b-isaca{background:#0b5394}.b-ms{background:#5e5e5e}.b-wip{background:transparent;border:2px dashed var(--muted);color:var(--muted)}
+.cert small{display:block;color:var(--muted);font-size:13.5px}
+
+/* skills */
+.skills{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.skill h4{margin:0 0 10px;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:13.5px;padding:5px 11px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--ink)}
+
+/* timeline */
+.timeline{position:relative;margin-left:8px;padding-left:28px;border-left:2px solid var(--line)}
+.job{position:relative;margin-bottom:34px}
+.job:last-child{margin-bottom:0}
+.job::before{content:"";position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent-2)}
+.job .head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+.job h4{margin:0;font-size:18px}
+.job .co{color:var(--accent);font-weight:600}
+.job .when{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.job ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+.job li{margin:4px 0}
+
+/* contact */
+.contact{text-align:center}
+.contact p{max-width:560px;margin:0 auto 26px;color:var(--muted)}
+.contact .cta{justify-content:center}
+footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:13.5px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Anu Yerokun</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#certs">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Open to new opportunities</span>
+    <h1>Anu Yerokun</h1>
+    <p class="role">Cloud Security Architect · AWS Solutions Architect · CISA</p>
+    <p class="lede">I design, harden and assess cloud systems for fintech and financial services. My work joins resilient AWS architecture with audit-grade security, so the systems are secure and the evidence proves it to regulators and boards.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:anuyerokun@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Get in touch</a>
+      <a class="btn" href="https://linkedin.com/in/anu-yerokun" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.6 8.65 22 11.2 22 14.5V21h-4v-5.8c0-1.4 0-3.2-1.95-3.2S13.8 13.5 13.8 15.1V21H10z"/></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/ayerokun-cmd" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <h3 class="title">Six years where cloud architecture meets security and risk.</h3>
+    <div class="grid g3">
+      <div class="card"><h4>Secure AWS architecture</h4><p>Multi-AZ and multi-region networks with VPC segmentation, private subnets, Transit Gateway and least-privilege IAM, designed to the Well-Architected Framework.</p></div>
+      <div class="card"><h4>Resilience & cost</h4><p>Auto Scaling, load balancing, Route 53 failover, RDS Multi-AZ and disaster-recovery planning, plus right-sizing, Savings Plans and serverless designs that cut spend.</p></div>
+      <div class="card"><h4>Security by design</h4><p>KMS envelope encryption, permission boundaries, SCPs, GuardDuty, Security Hub and CloudFormation guardrails built into the platform from day one.</p></div>
+      <div class="card"><h4>Audit-grade governance</h4><p>Hands-on with NIST CSF/RMF, ISO 27001, SOC 2, PCI-DSS, SOX 404 and GDPR. I run ISMS programs and certification audits and produce evidence that holds up.</p></div>
+      <div class="card"><h4>Third-party & cloud risk</h4><p>Security architecture reviews of vendor API integrations, cross-account IAM trust and data protection controls before anything goes into production.</p></div>
+      <div class="card"><h4>Executive communication</h4><p>KRI dashboards and risk reports that turn complex cloud and security telemetry into decisions for boards and senior leadership.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="wrap">
+    <h2>Impact</h2>
+    <h3 class="title">Selected results</h3>
+    <div class="grid g3">
+      <div class="card stat"><div class="n">−40%</div><div class="l">Mean incident-response time at Citigroup, from structured escalation paths</div></div>
+      <div class="card stat"><div class="n">+30%</div><div class="l">Regulatory adherence from the GDPR and SOX GRC frameworks I built</div></div>
+      <div class="card stat"><div class="n">−25%</div><div class="l">Compliance violations after cloud, IAM and network assessments</div></div>
+      <div class="card stat"><div class="n">−30%</div><div class="l">Audit findings at The Home Depot, working with Big 4 auditors</div></div>
+      <div class="card stat"><div class="n">85%</div><div class="l">High-risk vulnerabilities remediated on schedule at Target</div></div>
+      <div class="card stat"><div class="n">100%</div><div class="l">SOX compliance across financial systems</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <h2>Certifications</h2>
+    <h3 class="title">Credentials</h3>
+    <div class="grid g4">
+      <div class="card cert"><div class="badge b-aws">AWS</div><div><h4>Solutions Architect – Associate</h4><small>Amazon Web Services · 2026</small></div></div>
+      <div class="card cert"><div class="badge b-isaca">CISA</div><div><h4>Certified Information Systems Auditor</h4><small>ISACA · 2025</small></div></div>
+      <div class="card cert"><div class="badge b-ms">MS</div><div><h4>SQL Server & BI (70-448)</h4><small>Microsoft</small></div></div>
+      <div class="card cert"><div class="badge b-wip">…</div><div><h4>CRISC</h4><small>ISACA · In progress</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <h3 class="title">Technical toolkit</h3>
+    <div class="skills">
+      <div class="skill"><h4>Compute & serverless</h4><div class="chips"><span>EC2</span><span>Lambda</span><span>ECS / Fargate</span><span>Auto Scaling</span><span>Elastic Beanstalk</span><span>API Gateway</span><span>Step Functions</span><span>EventBridge</span><span>SQS / SNS</span></div></div>
+      <div class="skill"><h4>Networking & delivery</h4><div class="chips"><span>VPC design</span><span>Security groups & NACLs</span><span>NAT / IGW</span><span>Transit Gateway</span><span>VPC peering</span><span>PrivateLink</span><span>Route 53</span><span>CloudFront</span><span>Direct Connect / VPN</span></div></div>
+      <div class="skill"><h4>Storage & databases</h4><div class="chips"><span>S3</span><span>EBS</span><span>EFS</span><span>RDS Multi-AZ</span><span>Aurora</span><span>DynamoDB</span><span>ElastiCache</span><span>S3 Glacier</span></div></div>
+      <div class="skill"><h4>Security & identity</h4><div class="chips"><span>IAM</span><span>Organizations & SCPs</span><span>KMS</span><span>Secrets Manager</span><span>ACM</span><span>GuardDuty</span><span>Security Hub</span><span>AWS Config</span><span>WAF & Shield</span><span>CloudTrail</span><span>Zero Trust</span><span>Threat modeling</span></div></div>
+      <div class="skill"><h4>Infrastructure as code & operations</h4><div class="chips"><span>CloudFormation</span><span>AWS CLI / SDK</span><span>CI/CD</span><span>CloudWatch</span><span>Systems Manager</span><span>Git</span><span>Jira</span></div></div>
+      <div class="skill"><h4>Resilience & optimization</h4><div class="chips"><span>Multi-AZ / multi-region</span><span>RTO / RPO</span><span>Backup & DR</span><span>Right-sizing</span><span>Savings Plans / RIs</span><span>Cost Explorer</span><span>Trusted Advisor</span></div></div>
+      <div class="skill"><h4>Governance & compliance</h4><div class="chips"><span>Well-Architected</span><span>NIST CSF / RMF</span><span>ISO 27001/2</span><span>SOC 2</span><span>PCI-DSS</span><span>SSAE 18</span><span>SOX 404</span><span>ITGC</span><span>GDPR</span><span>HIPAA</span><span>NDPA</span><span>COBIT</span><span>COSO</span></div></div>
+      <div class="skill"><h4>Platforms</h4><div class="chips"><span>ServiceNow</span><span>GRC Archer</span><span>AuditBoard</span><span>Okta</span><span>SailPoint</span><span>Oracle ERP</span><span>SQL</span><span>KRI dashboards</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <h3 class="title">Where I've worked</h3>
+    <div class="timeline">
+      <div class="job">
+        <div class="head"><h4>Security & Technology Risk Analyst · <span class="co">Moniepoint</span></h4><span class="when">Jun 2026 – Present</span></div>
+        <ul>
+          <li>Assess AWS fintech workloads against the Well-Architected Framework (VPC segmentation, IAM scope, KMS, RDS/S3 configuration) and recommend changes that improve resilience, security and cost.</li>
+          <li>Lead third-party and cloud vendor risk management, including architecture reviews of API integrations and cross-account IAM trust.</li>
+          <li>Maintain the ISO 27001 ISMS and coordinate surveillance and certification audits, building security-by-design controls into cloud configuration standards and IaC guardrails.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>GRC & Cloud Risk Analyst (Contract) · <span class="co">Brinks Bank</span></h4><span class="when">Jun 2025 – May 2026</span></div>
+        <ul>
+          <li>Ran end-to-end security architecture and technology risk assessments aligned to NIST CSF and ISO 27001.</li>
+          <li>Evaluated IAM least-privilege, KMS encryption, network segmentation and logging controls, and produced prioritized remediation plans.</li>
+          <li>Designed executive KRI dashboards and risk reports for the Board and Senior Management.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>IT Auditor / Cloud Security & GRC Analyst · <span class="co">Citigroup</span></h4><span class="when">Aug 2023 – Jun 2025</span></div>
+        <ul>
+          <li>Assessed cloud infrastructure, IAM, application security and networks, cutting compliance violations by 25%.</li>
+          <li>Built GRC frameworks for GDPR and SOX, improving regulatory adherence by 30%.</li>
+          <li>Coordinated incident response during active security events, reducing mean response time by 40%.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>IT Auditor / SOX Compliance Analyst · <span class="co">The Home Depot</span></h4><span class="when">Oct 2022 – Aug 2023</span></div>
+        <ul>
+          <li>Assessed ITGCs, automated controls and access management, keeping financial systems 100% SOX compliant.</li>
+          <li>Worked with Big 4 external auditors and reduced findings by 30% through early remediation of gaps.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>IT Auditor / Risk Analyst · <span class="co">Target</span></h4><span class="when">Dec 2019 – Oct 2022</span></div>
+        <ul>
+          <li>Ran deep-dive technology risk assessments that got 85% of high-risk vulnerabilities fixed on schedule.</li>
+          <li>Produced quarterly KRI reports that informed security and infrastructure investment decisions.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="head"><h4>Senior Business Analyst · <span class="co">Target / T-Mobile</span></h4><span class="when">Sep 2017 – Dec 2019</span></div>
+        <ul>
+          <li>Turned security, compliance and business requirements into technical specifications, and managed UAT before production releases.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <h3 class="title">Background</h3>
+    <div class="grid g3">
+      <div class="card"><h4>B.S., Psychology</h4><p>Arizona State University</p></div>
+      <div class="card"><h4>A.S., Computer Science</h4><p>Pima Community College</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <h3 class="title">Let's talk</h3>
+    <p>I'm open to cloud security architecture, cloud GRC and security risk roles. Based in Mexico, open to remote work.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:anuyerokun@gmail.com">anuyerokun@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/anu-yerokun" target="_blank" rel="noopener">linkedin.com/in/anu-yerokun</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="y">2026</span> Anu Yerokun</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
